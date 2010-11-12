@@ -1,0 +1,1 @@
+java -Xms512m -Xmx1024m -jar /www/extsvn/extdoc/build/dist/ext-doc-snapshot/ext-doc.jar -p /www/extsvn/extdoc/build/dist/ext-doc-snapshot/sample/ext4.xml -o $1 -t /www/extsvn/extdoc/build/dist/ext-doc-snapshot/sample/../template/ext/template.xml -verbose
