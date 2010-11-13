@@ -1,19 +1,19 @@
-== Ext JS Doc ==
+== Ext JS Doc
 
 Ext JS Doc is a ExtJS-style JavaScript comments processor used for building API documentation similar to the documentation bundled with the Ext JS library.
 
-= Building Docs =
+= Building Docs
 
 Using Java on the command line, we need to execute the ext-doc.jar file and pass in a few arguments.
 
- p - The processor XML file (sample\ext.xml)
- s - The source code with your JSDoc comments in it.
- o - The output template (ext\template.xml)
+* p - The processor XML file (sample\ext.xml)
+* s - The source code with your JSDoc comments in it.
+* o - The output template (ext\template.xml)
 
 So for example, the full command line to generate docs might look like this:
 
 java -jar ext-doc.jar -p sample\ext.xml -s my\source\code\folder -o ext\template.xml -verbose
 
-= Requirements = 
+= Requirements 
 
 Java 1.6
