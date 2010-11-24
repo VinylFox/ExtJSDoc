@@ -6,20 +6,6 @@
 <xsl:output method="html" indent="no"/>
     <xsl:template match="/docClass">
         <div class="body-wrap">
-            <div class="top-tools">
-                <a class="inner-link" href="#{className}-props">
-                <img src="resources/images/default/s.gif" class="item-icon icon-prop"/>Properties</a><xsl:text>&#x0D;</xsl:text>
-                <a class="inner-link" href="#{className}-methods">
-                <img src="resources/images/default/s.gif" class="item-icon icon-method"/>Methods</a><xsl:text>&#x0D;</xsl:text>
-                <a class="inner-link" href="#{className}-events">
-                <img src="resources/images/default/s.gif" class="item-icon icon-event"/>Events</a><xsl:text>&#x0D;</xsl:text>
-                <xsl:if test="cfgs">
-                    <a class="inner-link" href="#{className}-configs">
-                    <img src="resources/images/default/s.gif" class="item-icon icon-config"/>Config Options</a><xsl:text>&#x0D;</xsl:text>
-                </xsl:if>
-                <a class="bookmark" href="../docs/?class={className}">
-                <img src="resources/images/default/s.gif" class="item-icon icon-fav"/>Direct Link</a><xsl:text>&#x0D;</xsl:text>
-            </div>
             <xsl:if test="superClasses">
                 <xsl:call-template name="super-classes"/>
             </xsl:if>
