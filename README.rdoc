@@ -10,11 +10,12 @@ Using Java on the command line, we need to execute the ext-doc.jar file and pass
 
 * p - The processor XML file (sample\ext.xml)
 * s - The source code with your JSDoc comments in it.
-* o - The output template (ext\template.xml)
+* o - The output folder 
+* t - The template XML file (template\ext\template.xml)
 
 So for example, the full command line to generate docs might look like this:
 
- java -jar ext-doc.jar -p sample\ext.xml -s my\source\code\folder -o ext\template.xml -verbose
+ java -jar ext-doc.jar -p sample\ext.xml -s my\source\code\folder -o my\docs -t template\ext\template.xml -verbose
 
 = Requirements 
 
